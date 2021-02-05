@@ -6,6 +6,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 @Table(name = "faixa_cep")
@@ -15,12 +17,15 @@ public class FaixaCep {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
+	@NotBlank
 	@Column(name = "codigo_loja")
 	private String codigoLoja;
 	
+	@NotEmpty
 	@Column(name = "faixa_inicio")
 	private Long faixaInicio;
 	
+	@NotEmpty
 	@Column(name = "faixa_fim")
 	private Long faixaFim;
 	

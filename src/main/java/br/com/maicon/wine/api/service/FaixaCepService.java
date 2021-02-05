@@ -17,6 +17,9 @@ public class FaixaCepService {
 	}
 	
 	public FaixaCep alterar(FaixaCep faixaCep) {
+		if(!faixaCepRepository.existsById(faixaCep.getId())) {
+			throw new RuntimeException("Id inválido");
+		}
 		
 		return faixaCepRepository.save(faixaCep);
 	}
@@ -24,6 +27,10 @@ public class FaixaCepService {
 	
 	
 	public void excluir(Long id) {
+		if(!faixaCepRepository.existsById(id)) {
+			throw new RuntimeException("Id inválido");
+		}
+		
 		faixaCepRepository.deleteById(id);
 	}
 

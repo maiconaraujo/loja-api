@@ -1,4 +1,4 @@
-package br.com.maicon.wine.api.exeption;
+package br.com.maicon.loja.api.exeption;
 
 public class NegocioException extends RuntimeException{
 

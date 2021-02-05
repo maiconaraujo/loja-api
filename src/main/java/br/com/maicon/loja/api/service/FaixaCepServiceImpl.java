@@ -1,13 +1,13 @@
-package br.com.maicon.wine.api.service;
+package br.com.maicon.loja.api.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.maicon.wine.api.exeption.NegocioException;
-import br.com.maicon.wine.api.model.FaixaCep;
-import br.com.maicon.wine.api.repository.FaixaCepRepository;
+import br.com.maicon.loja.api.exeption.NegocioException;
+import br.com.maicon.loja.api.model.FaixaCep;
+import br.com.maicon.loja.api.repository.FaixaCepRepository;
 
 @Service
 public class FaixaCepServiceImpl implements FaixaCepService{

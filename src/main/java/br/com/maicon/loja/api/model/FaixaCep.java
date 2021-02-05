@@ -1,4 +1,4 @@
-package br.com.maicon.wine.api.model;
+package br.com.maicon.loja.api.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

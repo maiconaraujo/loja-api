@@ -1,4 +1,4 @@
-package br.com.maicon.wine.api.controller;
+package br.com.maicon.loja.api.controller;
 
 import javax.validation.Valid;
 
@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.maicon.wine.api.model.FaixaCep;
-import br.com.maicon.wine.api.service.FaixaCepServiceImpl;
+import br.com.maicon.loja.api.model.FaixaCep;
+import br.com.maicon.loja.api.service.FaixaCepServiceImpl;
 
 @RestController
 @RequestMapping("/faixas-cep")

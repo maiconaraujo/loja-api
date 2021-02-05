@@ -1,6 +1,6 @@
-package br.com.maicon.wine.api.service;
+package br.com.maicon.loja.api.service;
 
-import br.com.maicon.wine.api.model.FaixaCep;
+import br.com.maicon.loja.api.model.FaixaCep;
 
 public interface FaixaCepService {
 	

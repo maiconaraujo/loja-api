@@ -1,4 +1,4 @@
-package br.com.maicon.wine.api.repository;
+package br.com.maicon.loja.api.repository;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import br.com.maicon.wine.api.model.FaixaCep;
+import br.com.maicon.loja.api.model.FaixaCep;
 
 @Repository
 public interface FaixaCepRepository extends JpaRepository<FaixaCep, Long>{

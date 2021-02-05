@@ -1,4 +1,4 @@
-package br.com.maicon.wine.api.exceptionhandler;
+package br.com.maicon.loja.api.exceptionhandler;
 
 import java.time.LocalDateTime;
 

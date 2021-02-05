@@ -1,4 +1,4 @@
-package br.com.maicon.wine.api.exceptionhandler;
+package br.com.maicon.loja.api.exceptionhandler;
 
 import java.time.LocalDateTime;
 
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import br.com.maicon.wine.api.exeption.NegocioException;
+import br.com.maicon.loja.api.exeption.NegocioException;
 
 @ControllerAdvice
 public class ApiExceptionHandler extends ResponseEntityExceptionHandler{

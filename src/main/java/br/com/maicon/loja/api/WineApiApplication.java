@@ -1,4 +1,4 @@
-package br.com.maicon.wine.api;
+package br.com.maicon.loja.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

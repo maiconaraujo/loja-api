@@ -23,13 +23,15 @@ public class FaixaCep {
 	@Column(name = "codigo_loja")
 	private String codigoLoja;
 	
-	@NotNull
-	@Column(name = "faixa_inicio")
+	@NotNull	
 	@Min(10000000)
 	@Max(99999999)
+	@Column(name = "faixa_inicio")
 	private Long faixaInicio;
 	
 	@NotNull
+	@Min(10000000)
+	@Max(99999999)	
 	@Column(name = "faixa_fim")
 	private Long faixaFim;
 	

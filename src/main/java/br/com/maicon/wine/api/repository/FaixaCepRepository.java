@@ -8,4 +8,5 @@ import br.com.maicon.wine.api.model.FaixaCep;
 @Repository
 public interface FaixaCepRepository extends JpaRepository<FaixaCep, Long>{
 
+	
 }

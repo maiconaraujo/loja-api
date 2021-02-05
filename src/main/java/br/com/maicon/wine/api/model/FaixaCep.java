@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "faixa_cep")
@@ -21,11 +21,11 @@ public class FaixaCep {
 	@Column(name = "codigo_loja")
 	private String codigoLoja;
 	
-	@NotEmpty
+	@NotNull
 	@Column(name = "faixa_inicio")
 	private Long faixaInicio;
 	
-	@NotEmpty
+	@NotNull
 	@Column(name = "faixa_fim")
 	private Long faixaFim;
 	

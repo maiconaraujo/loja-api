@@ -39,8 +39,8 @@ public class FaixaCepServiceImpl implements FaixaCepService{
 
 	@Override
 	public FaixaCep buscaPorCep(Long cep) {
-		// TODO Auto-generated method stub
-		return null;
+		return faixaCepRepository.findByCep(cep);
+		
 	}
 
 }

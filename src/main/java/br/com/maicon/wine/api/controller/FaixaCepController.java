@@ -49,7 +49,7 @@ public class FaixaCepController {
 	public ResponseEntity<FaixaCep> buscaPorCep(@RequestParam Long cep) {
 		FaixaCep faixaCep =  service.buscaPorCep(cep);
 		
-		if(faixaCep != null) {
+		if(faixaCep != null) { 
 			return ResponseEntity.ok(faixaCep);
 		}
 		

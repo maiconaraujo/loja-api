@@ -14,30 +14,31 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.maicon.wine.api.model.FaixaCep;
-import br.com.maicon.wine.api.repository.FaixaCepRepository;
+import br.com.maicon.wine.api.service.FaixaCepService;
 
 @RestController
 @RequestMapping("/faixas-cep")
 public class FaixaCepController {
 	
 	@Autowired
-	private FaixaCepRepository faixaCepRepository;
+	private FaixaCepService faixaCepService;
 
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public void adicionar(@Valid @RequestBody FaixaCep faixaCep) {
-		 faixaCepRepository.save(faixaCep);
+	public FaixaCep adicionar(@Valid @RequestBody FaixaCep faixaCep) {
+		 return faixaCepService.salvar(faixaCep);
 	}
 	
 	@PutMapping("/{id}")
 	@ResponseStatus(HttpStatus.OK)
 	public void atualizar(@Valid @PathVariable Long id, @RequestBody FaixaCep faixaCep) {
-		 faixaCepRepository.save(faixaCep);
+		faixaCep.setId(id);
+		faixaCepService.alterar(faixaCep);
 	}	
 	
 	@DeleteMapping("/{id}")
 	@ResponseStatus(HttpStatus.OK)
 	public void remover(@PathVariable Long id) {
-		 faixaCepRepository.deleteById(id);
+		faixaCepService.excluir(id);
 	}		
 }

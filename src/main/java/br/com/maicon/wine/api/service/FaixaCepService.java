@@ -16,6 +16,11 @@ public class FaixaCepService {
 		return faixaCepRepository.save(faixaCep);
 	}
 	
+	public FaixaCep alterar(FaixaCep faixaCep) {
+		
+		return faixaCepRepository.save(faixaCep);
+	}
+		
 	
 	
 	public void excluir(Long id) {

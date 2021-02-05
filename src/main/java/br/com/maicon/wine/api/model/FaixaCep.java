@@ -6,6 +6,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -23,6 +25,8 @@ public class FaixaCep {
 	
 	@NotNull
 	@Column(name = "faixa_inicio")
+	@Min(10000000)
+	@Max(99999999)
 	private Long faixaInicio;
 	
 	@NotNull
